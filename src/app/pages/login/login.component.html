@@ -1,0 +1,53 @@
+
+  <div class="container py-3">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../../../assets/home/paisaje.png');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h2 class="pt-6 mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center" style="letter-spacing: 4px;"><b>The Secret of the Asius</b></h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="" alt="DCP" width="50" height="50" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Stil</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>Reniun</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-5 position-static0 d-block rounded-5 shadow" style="border:1px solid rgb(114, 103, 103);" >
+      <div class="container mt-3" style="margin-bottom: 30px">
+        <h2 class="fw-bold mb-0 text-center" style="padding-bottom: 20px;">Iniciar seccion</h2>
+        <form (ngSubmit)="formSubmit()">
+
+          <div class="form-floating mb-3">
+            <input type="username" class="inp form-control rounded-4" required [(ngModel)]="datalogin.username"  placeholder="name@example.com" name="email" >
+            <label for="floatingInput">Usuario</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="inp form-control rounded-4" required [(ngModel)]="datalogin.password" placeholder="name@example.com" name="password" >
+            <label for="floatingInput">Contraseña</label>
+          </div>
+
+          <hr class="my-4">
+          <button type="submit" class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" name="login">Iniciar seccion</button>
+          <button type="reset" class="w-100 mb-2 btn btn-lg rounded-4 btn-danger" >Limpiar</button>
+        </form>
+        <hr class="my-4">
+          <p class=" text-center">By: Shadow Crew</p>
+
+      </div>
+    </div>
+
+    
+  </div>
+</div>
